@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bat Ball Game</title>
+  </head>
+  <body>
+    <h1><b>Game</b></h1>
+
+    <button  class="choise-btn"
+      onclick="
+      let compChoice=generateCompChoice();
+// const userChoiceMsg='';
+// const compChoiceMsg =``;
+let resultMsg=getResult('Bat',compChoice);
+showResult('Bat', compChoice , resultMsg);
+"
+    >
+      <img src="/objects/game/bat.png" alt="Bat image" class="choice-img" />
+    </button>
+
+    <!-- for ball  -->
+    <button  class="choise-btn"
+      onclick=" 
+      compChoice=generateCompChoice();
+
+ resultMsg=getResult('Ball',compChoice);
+showResult('Ball', compChoice , resultMsg);
+"
+    >
+      <img src="/objects/game/ball.png" alt="Ball image" class="choice-img" />
+    </button>
+
+    <!-- for Stamp -->
+
+    <button class="choise-btn"
+      onclick="
+      compChoice=generateCompChoice();
+  resultMsg=getResult('Stamp',compChoice);
+    showResult('Stamp', compChoice , resultMsg);
+"
+    >
+      <img src="/objects/game/stump.png" alt="Stamp image" class="choice-img" />
+    </button>
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <button class="reset"
+      onclick="localStorage.clear()
+    resetScore();
+    "
+    >
+      Reset
+    </button>
+  </body>
+
+  <script src="script.js"></script>
+</html>

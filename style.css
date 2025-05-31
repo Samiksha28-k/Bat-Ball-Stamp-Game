@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color:rgb(184, 216, 245);
+     color:rgb(17, 17, 57);
+}
+ .choise-btn{
+    height: 100px;
+    width: 100px;
+    border: none;
+    margin: 10px;
+    background-color: rgb(22, 134, 233);
+    border-radius: 50px;
+ }
+ .choise-btn:hover{
+    background-color: rgb(145, 197, 244);
+ }
+ .choice-img{
+    height: 75px;
+ }
+ h1{
+    font-family:Arial, Helvetica, sans-serif
+ }
+ button.reset {
+    all: unset; /* Removes all inherited styles */
+    background: #f44336; /* Example background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+button.reset:hover {
+    background: #d32f2f; /* Darker shade on hover */
+}
+#score{
+    color: rgb(17, 17, 57);
+    
+}
